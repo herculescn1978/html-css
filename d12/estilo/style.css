@@ -10,11 +10,11 @@ html, body {
     background-color: darkkhaki;
 }
 
-header {
+/*header {
     background-color: black;
     color: white;
     text-align: center;
-}
+}*/
 
 header > h1 {
     padding-top: 50px;
