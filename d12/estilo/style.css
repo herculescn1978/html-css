@@ -7,6 +7,17 @@
 
 html, body {
     min-height: 100vh;
-    background-color: darkkhaki;
+    background-color: darkgrey;
 }
 
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
