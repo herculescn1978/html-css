@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTANDO TABELA</title>
+
+<style>
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+table {
+    width: 500px;
+    border-collapse: collapse;
+    
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+td.num {
+    text-align: center;
+    background-color: rgb(206, 174, 236);
+}
+
+thead {
+    background-color: rgb(247, 79, 79);
+    color: white;
+}
+
+tfoot {
+    background-color: grey;
+    color: white;
+    text-align: center;
+}
+
+</style>
+
+
+</head>
+<body>
+
+<table>
+    <thead>
+        <td><strong>Hércules</strong></td>
+        <td><strong>Lidiane</strong></td>
+        <td><strong>Leandro</strong></td>
+        <td><strong>Gabriel</strong></td>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td class="num">0001</td>
+        <td class="num">0002</td>
+        <td class="num">0003</td>
+        <td class="num">0004</td>
+    </tr>
+
+    <tr>
+        <td class="num">0005</td>
+        <td class="num">0006</td>
+        <td class="num">0007</td>
+        <td class="num">0008</td>
+    </tr>
+</tbody>
+
+<tfoot>
+    <td>Total</td>
+    <td>Total 2</td>
+    <td>Total 3</td>
+    <td>Total 4</td>
+</tfoot>
+
+
+</table>
+
+
+    
+</body>
+</html>

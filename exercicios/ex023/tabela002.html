@@ -13,7 +13,7 @@
 table {
     width: 500px;
     border-collapse: collapse;
-    
+    position: relative;
 }
 
 td, th {
@@ -21,12 +21,19 @@ td, th {
     padding: 5px;
 }
 
+caption {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: lightgray;
+}
+
 td.num {
     text-align: center;
 }
 
 thead {
-    background-color: gray;
+    background-color: black;
     color: white;
 }
 
@@ -36,14 +43,24 @@ tfoot {
     text-align: center;
 }
 
+thead > tr > th {
+    position: sticky;
+    top: -1px;
+    background-color: black;
+}
+
+
+tbody > tr:nth-child(2n-1) {
+    background-color: lightsalmon;
+}
+
+tbody > tr:nth-child(2n) {
+    background-color: lightgray;
+}
+
 /*td.tfoo COMEÇAR DAQUI*/
 
-
-
 </style>
-
-
-
 
 </head>
 <body>
@@ -52,6 +69,7 @@ tfoot {
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+        CAPTION (LEGENDA DA TABELA)
             THEAD
                 TR, TD, TH
             TBODY
@@ -61,11 +79,14 @@ tfoot {
     -->
 
 <table>
-    
+    <caption>
+        População das unidades federativa
+    </caption>
+
     <thead>
         <tr>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 100px;">População</th>
         </tr>
     </thead>
         
@@ -215,10 +236,15 @@ tfoot {
         
 
     </tfoot>
-
-
-
 </table>
-    
+ 
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam aliquid illum facilis perspiciatis illo veniam harum exercitationem, necessitatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam aliquid illum facilis perspiciatis illo veniam harum exercitationem, necessitatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam aliquid illum facilis perspiciatis illo veniam harum exercitationem, necessitatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam aliquid illum facilis perspiciatis illo veniam harum exercitationem, necessitatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam aliquid illum facilis perspiciatis illo veniam harum exercitationem, necessitatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam aliquid illum facilis perspiciatis illo veniam harum exercitationem, necessitatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam aliquid illum facilis perspiciatis illo veniam harum exercitationem, necessitatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam aliquid illum facilis perspiciatis illo veniam harum exercitationem, necessitatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!Lorem ipsum dolor sittatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam aliquid illum facilis perspiciatis illo veniam harum exercitationem, necessitatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!Lorem ipsum dolor sittatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam aliquid illum facilis perspiciatis illo veniam harum exercitationem, necessitatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam  perspiciatis illo veniam harum exercitationem, necessitatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!Lorem ipsum dolor sittatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam aliquid illum facilis perspiciatis illo veniam harum exercitationem, necessitatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam  perspiciatis illo veniam harum exercitationem, necessitatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!Lorem ipsum dolor sittatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam aliquid illum facilis perspiciatis illo veniam harum exercitationem, necessitatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam  perspiciatis illo veniam harum exercitationem, necessitatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!Lorem ipsum dolor sittatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam aliquid illum facilis perspiciatis illo veniam harum exercitationem, necessitatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam aliquid illum facilis perspiciatis illo veniam harum exercitationem, necessitatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam aliquid illum facilis perspiciatis illo veniam harum exercitationem, necessitatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam aliquid illum facilis perspiciatis illo veniam harum exercitationem, necessitatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam aliquid illum facilis perspiciatis lores, vitae odit veritatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam aliquid illum facilis perspiciatis illo veniam harum exercitationem, necessitatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam aliquid illum facilis perspiciatis lores, vitae odit veritatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam aliquid illum facilis perspiciatis illo veniam harum exercitationem, necessitatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam aliquid illum facilis perspiciatis illo veniam harum exercitationem, necessitatibus molestiae doloremque dolore quia repudiandae provident eveniet dolores, vitae odit veritatis!</p>
+
 </body>
 </html>
